@@ -1,0 +1,35 @@
+baseURL = "https://conner.codes"
+#languageCode = "en-us"
+canonifyURLs = false
+theme = "cfzero-theme"
+sectionPagesMenu = "main"
+title = "Conner Codes, and Blogs, and codes some more"
+
+[params]
+    siteName = "Conner Codes"
+
+[taxonomies]
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        pre = ""
+        name = "Home"
+        url  = "/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "about"
+        pre = ""
+        name = "About"
+        url  = "about"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "blog"
+        pre = ""
+        name = "Blog"
+        url  = "post/"
+        weight = 3
+
+post = "/:year/:month/:title/"

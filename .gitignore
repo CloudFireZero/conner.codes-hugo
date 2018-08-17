@@ -1,0 +1,6 @@
+.vscode
+.idea
+.sass-cache
+vendor
+node_modules
+public

@@ -1,0 +1,24 @@
+{{ partial "head.html" . }} {{ partial "nav.html" . }}
+<section id="about" class="about-section overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="text-center">
+                    <h2>
+                        <span>{{ .Title }}</span>
+                        <br>
+                        <small>{{ .Page.Description }}</small>
+                    </h2>
+
+                </div>
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="col-sm-12 wow animated fadeInLeft text-center" data-wow-delay="0.4s">
+                        {{ .Content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ partial "scripts.html" . }} {{ partial "footer.html" . }}
