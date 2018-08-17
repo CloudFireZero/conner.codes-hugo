@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section id="about" class="about-section overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="text-center">
+
+                    <h2>{{ .Title }}</h2>
+                    <p>{{ .Content }}</p>
+                </div>
+
+                <div class="separator"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 wow animated fadeInLeft text-center" data-wow-delay="0.4s">
+                <ul class="unstyled-list text-left">
+                    {{ range .Data.Pages }}
+                    <li><a href={{ .Permalink }}>{{ .Title }} - {{ .Date.Format "January 02, 2006" }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
