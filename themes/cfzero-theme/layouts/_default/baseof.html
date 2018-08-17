@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
+<html lang="en">
+    {{- partial "includes/head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
+        {{- partial "includes/header.html" . -}}
+        {{- partial "includes/nav.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
-        {{- partial "footer.html" . -}}
+        {{- partial "includes/scripts.html" . -}}
+        {{- partial "includes/footer.html" . -}}
+        {{ block "addscripts" . }} {{ end }}
     </body>
 </html>

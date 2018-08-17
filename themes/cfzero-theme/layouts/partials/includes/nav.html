@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="">
+            <a class="navbar-brand" href="{{ "/" | absURL }}">
                 <span class="" style="margin-left:20px;">
 <i class="fa ion-ios-flask-outline fa-5x"></i>&nbsp;&nbsp;{{ .Site.Params.sitename }}
             </a>
@@ -33,12 +33,12 @@
                             {{ end }}
                         </ul>
                     {{ else }}
-                    <li>
-                        <a href="{{ .URL }}">
-                            {{ .Pre }}
-                            <span>{{ .Name }}</span>
-                        </a>
-                    </li>
+                        <li>
+                            <a href="{{ .URL }}">
+                                {{ .Pre }}
+                                <span>{{ .Name }}</span>
+                            </a>
+                        </li>
                     {{ end }} 
                 {{ end }}
             </ul>

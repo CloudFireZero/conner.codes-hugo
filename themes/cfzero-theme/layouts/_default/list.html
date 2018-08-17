@@ -1,5 +1,4 @@
-{{ partial "head.html" . }} {{ partial "nav.html" . }}
-
+{{ define "main" }}
 <section id="about" class="about-section overflow-hidden">
     <div class="container">
         <div class="row">
@@ -24,5 +23,4 @@
         </div>
     </div>
 </section>
-
-{{ partial "scripts.html" . }} {{ partial "footer.html" . }}
+{{ end }}

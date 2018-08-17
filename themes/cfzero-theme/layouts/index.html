@@ -1,11 +1,13 @@
-{{ partial "head.html" . }}
-{{ partial "nav.html" . }}
+<!DOCTYPE html>
+<html lang="en">
+{{- partial "includes/head.html" . -}}
 
-{{ partial "section.html" . }}
+<body>
+    {{- partial "includes/header.html" . -}} {{- partial "includes/nav.html" . -}}
+    <div id="content">
+        {{- block "main" . }}{{- end }}
+    </div>
+    {{- partial "includes/scripts.html" . -}} {{- partial "includes/footer.html" . -}} {{ block "addscripts" . }} {{ end }}
+</body>
 
-<pre>
-    {{ printf "%#v" $.Site }}
-</pre>
-
-{{ partial "scripts.html" . }}
-{{ partial "footer.html" . }}
+</html>

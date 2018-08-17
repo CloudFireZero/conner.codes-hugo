@@ -1,9 +1,11 @@
 baseURL = "https://conner.codes"
 #languageCode = "en-us"
-canonifyURLs = false
+canonifyURLs = true
 theme = "cfzero-theme"
-sectionPagesMenu = "main"
+sectionPagesMenu = ""
 title = "Conner Codes, and Blogs, and codes some more"
+
+post = "/:year/:month/:title/"
 
 [params]
     siteName = "Conner Codes"
@@ -17,19 +19,15 @@ title = "Conner Codes, and Blogs, and codes some more"
         name = "Home"
         url  = "/"
         weight = 1
-
     [[menu.main]]
         identifier = "about"
         pre = ""
         name = "About"
-        url  = "about"
+        url  = "/about/"
         weight = 2
-
     [[menu.main]]
         identifier = "blog"
         pre = ""
         name = "Blog"
-        url  = "post/"
+        url  = "/post/"
         weight = 3
-
-post = "/:year/:month/:title/"
