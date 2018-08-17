@@ -1,0 +1,4 @@
+[submodule "conner.codes-public"]
+	path = conner.codes-public
+	url = https://github.com/CloudFireZero/conner.codes-public.git
+	branch = master
