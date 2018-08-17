@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-{{- partial "includes/head.html" . -}}
-
-<body>
-    {{- partial "includes/header.html" . -}} {{- partial "includes/nav.html" . -}}
-    <div id="content">
-        {{- block "main" . }}{{- end }}
+{{ define "main" }}
+<section id="about" class="about-section overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="text-center">
+                    <img src="{{ "assets/images/oof_ouchie_ow.png" | absURL }}" class="img-circle margin-btm-30 wow animated fadeInUp" alt=""
+                        data-wow-delay="0.2s" height="250">
+                    <h1>
+                        Welcome to
+                        <span>{{ .Title }}</span>
+                        <br>
+                        <small>{{ .Page.Description }}</small>
+                    </h1>
+                </div>
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="col-sm-12 wow animated fadeInLeft text-center" data-wow-delay="0.4s">
+                        {{ .Content }}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    {{- partial "includes/scripts.html" . -}} {{- partial "includes/footer.html" . -}} {{ block "addscripts" . }} {{ end }}
-</body>
-
-</html>
+</section>
+{{ end }}

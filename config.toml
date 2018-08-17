@@ -9,6 +9,7 @@ post = "/:year/:month/:title/"
 
 [params]
     siteName = "Conner Codes"
+    siteOwner = "CFZero Labs"
 
 [taxonomies]
 
