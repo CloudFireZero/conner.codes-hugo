@@ -1,0 +1,16 @@
+---
+label: Video
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  label: Video ID
+  name: video_id
+  config:
+    required: true
+- type: text
+  name: player_id
+  label: Player ID
+  config:
+    required: true
+  default: NyonVrqYe
