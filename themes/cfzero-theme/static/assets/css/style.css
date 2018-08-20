@@ -268,6 +268,12 @@ Buttons style
 
   .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: transparent; } }
+.navbar .container-fluid {
+  max-width: 960px !important; }
+
+.container {
+  max-width: 960px !important; }
+
 .parallax-section {
   background: url("../images/bg-1.jpg") no-repeat;
   height: 100%;
